@@ -37,7 +37,7 @@ class Database:
         self.connection.commit()
         
     
-class compras:
+class Compras:
     def __init__(self,nome, preco, quantidade):
         self.nome = nome
         self.preco = preco
