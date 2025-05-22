@@ -57,7 +57,7 @@ class Relatorio:
         pdf.set_font("Arial", size=12)
         
         pdf.cell(200, 10, txt="Relatório de Compras", ln=True, align='C')
-        for compras in self.compras:
+        for compra in self.compras:
             pdf.cell(200, 10, txt=f"ID:{compras[0]} | Nome:{compras[1]} | Preço:{compras[2]} | Quantidade:{compras[3]}", ln=True)
             
         pdf.output(f'relatorios/{nome_arquivo}')
